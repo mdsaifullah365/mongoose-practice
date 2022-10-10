@@ -8,11 +8,6 @@ app.use(cors());
 
 // Routes
 const productRoute = require('./routes/product.route');
-
-app.get('/', (req, res) => {
-  res.send('Data found successfully');
-});
-
 app.use('/api/v1/product', productRoute);
 
-module.exports = app;
+exports = app;
